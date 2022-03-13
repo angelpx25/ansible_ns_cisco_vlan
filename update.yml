@@ -3,4 +3,4 @@
   tasks:
     - name: Updating...
       become: yes
-      shell: 'apt update'
+      shell: '/usr/bin/apt update'
