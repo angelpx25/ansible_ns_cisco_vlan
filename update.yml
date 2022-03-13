@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Updating...
-      ping: '/usr/bin/apt update'
+      ping:
         dest: 8.8.8.8
         count: 2
         state: present
