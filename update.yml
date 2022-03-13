@@ -3,4 +3,4 @@
   tasks:
     - name: Updating...
       become: yes
-      raw: 'apt update'
+      shell: 'apt update'
