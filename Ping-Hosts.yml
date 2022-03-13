@@ -1,5 +1,7 @@
-- name: Ping Hosts
+- name: Ping Google
   hosts: all
   tasks:
     - name: Ping
-      ping:
+      ansible.netcommon.net_ping:
+        dest: 8.8.8.8
+        count: 2
