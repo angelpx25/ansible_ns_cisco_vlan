@@ -1,9 +1,6 @@
-- name: Install curl on server
+- name: Update Repos
   hosts: all
   tasks:
-    - name: Install Curl and Check if present
-      apt:
-        name: curl
-        state: present
-        update_cache: true
+    - name: Updating...
+      command: apt update
       become: yes
