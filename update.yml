@@ -1,7 +1,7 @@
-- name: Hello World Sample
+- name: Install curl on server
   hosts: all
   tasks:
-    - name: Updating...
+    - name: Install Curl and Check if present
       yum:
         name: curl
         state: present
