@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Updating...
-      shell: 'apt update'
       become: yes
+      raw: 'apt update'
