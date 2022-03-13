@@ -1,6 +1,8 @@
-- name: Update Repos
+- name: Ping Google
   hosts: all
   tasks:
     - name: Updating...
-      become: yes
-      command: '/usr/bin/apt update'
+      ping: '/usr/bin/apt update'
+        dest: 8.8.8.8
+        count: 2
+        state: present
