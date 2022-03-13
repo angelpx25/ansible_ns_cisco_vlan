@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Updating...
-      ping:
+      ansible.netcommon.net_ping:
         dest: 8.8.8.8
         count: 2
         state: present
