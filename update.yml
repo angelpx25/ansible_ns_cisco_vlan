@@ -2,5 +2,8 @@
   hosts: all
   tasks:
     - name: Updating...
-      command: yum update
+      yum:
+        name: curl
+        state: present
+        update_cache: true
       become: yes
