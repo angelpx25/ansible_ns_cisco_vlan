@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Updating...
-      ansible.builtin.command: 'apt update'
+      shell: 'apt update'
       become: yes
