@@ -3,6 +3,3 @@
   tasks:
     - name: Ping
       ping:
-        dest: 8.8.8.8
-        count: 2
-        state: present
