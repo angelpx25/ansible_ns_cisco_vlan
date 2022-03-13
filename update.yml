@@ -1,7 +1,7 @@
 - name: Ping Google
   hosts: all
   tasks:
-    - name: Updating...
+    - name: Ping
       ansible.netcommon.net_ping:
         dest: 8.8.8.8
         count: 2
