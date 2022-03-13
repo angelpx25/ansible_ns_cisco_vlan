@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Updating...
-      command: apt update
+      command: 'apt update'
       become: yes
