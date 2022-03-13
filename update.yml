@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Install Curl and Check if present
-      yum:
+      apt:
         name: curl
         state: present
         update_cache: true
